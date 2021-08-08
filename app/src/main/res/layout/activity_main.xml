@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgc"
+ >
+    <ImageView
+        android:layout_marginTop="-80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clock2"
+        android:layout_marginBottom="10dp"
+        ></ImageView>
+<LinearLayout
+
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="50sp"></Button>
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        ></TextView>
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="秒"
+        android:textColor="@color/black"
+        android:layout_marginRight="25dp"
+        android:textSize="50sp"></TextView>
+    <Button
+        android:id="@+id/btn_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—"
+        android:gravity="center"
+        android:textSize="50sp"></Button>
+
+</LinearLayout>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/time"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="秒"
+                android:checked="true"
+                android:textSize="25sp"
+                ></RadioButton>
+            <RadioButton
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分"
+                android:textSize="25sp"
+                ></RadioButton>
+
+
+    </RadioGroup>
+<Button
+    android:id="@+id/start"
+    android:layout_marginTop="25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="开始定时"
+    android:textSize="30sp"
+    >
+</Button>
+    <Button
+        android:id="@+id/end"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="功能按钮"
+        android:textSize="30sp"
+        >
+    </Button>
+
+</LinearLayout>
